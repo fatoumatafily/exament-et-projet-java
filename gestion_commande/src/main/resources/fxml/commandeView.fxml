@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ism.views.CommandeController">
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <HBox spacing="10">
+                <TextField fx:id="clientNameField" promptText="Nom du Client" />
+                <TextField fx:id="phoneField" promptText="Téléphone" />
+                <TextField fx:id="addressField" promptText="Adresse" />
+            </HBox>
+
+            <HBox spacing="10">
+                <ComboBox fx:id="articleComboBox" promptText="Choisir un article" />
+                <TextField fx:id="quantityField" promptText="Quantité" />
+                <TextField fx:id="priceField" promptText="Prix" />
+                <Button fx:id="addButton" text="Ajouter" onAction="#handleAddArticle" />
+            </HBox>
+
+            <TableView fx:id="articleTableView" prefHeight="200">
+                <columns>
+                    <TableColumn text="Article" />
+                    <TableColumn text="Prix" />
+                    <TableColumn text="Quantité" />
+                    <TableColumn text="Montant" />
+                </columns>
+            </TableView>
+
+            <HBox spacing="10" alignment="CENTER_RIGHT">
+                <Text fx:id="totalText" text="Total: 0.0" />
+                <Button fx:id="validateButton" text="Valider la Commande" onAction="#handleValidateCommande" />
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

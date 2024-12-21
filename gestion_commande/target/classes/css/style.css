@@ -1,0 +1,28 @@
+.text-field {
+    -fx-font-size: 14px;
+    -fx-padding: 5;
+}
+
+.combo-box {
+    -fx-font-size: 14px;
+}
+
+.table-view {
+    -fx-border-color: #ccc;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.text {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}

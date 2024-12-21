@@ -1,0 +1,17 @@
+package com.ism.views.utils;
+
+public class ValidationUtils {
+
+    public static boolean isNumber(String value) {
+        try {
+            Double.parseDouble(value);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+
+    public static boolean isNotEmpty(String value) {
+        return value != null && !value.trim().isEmpty();
+    }
+}
